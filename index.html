@@ -1,0 +1,355 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0091)http://www.loc/dokuwiki/wiki.php -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><HTML 
+lang="zh" lang="zh" dir="ltr" xml:lang="zh" 
+xmlns="http://www.w3.org/1999/xhtml"><HEAD><META content="IE=11.0000" 
+http-equiv="X-UA-Compatible">
+ 
+<META http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<TITLE>sailfish_x刷机 - wiki</TITLE> 
+<META name="GENERATOR" content="MSHTML 11.00.9600.17842"> 
+<META name="robots" content="index,follow"> 
+<META name="date" content="2018-06-25T06:18:01+0000"> 
+<META name="keywords" content="sailfish_x刷机"> <LINK title="wiki" href="/dokuwiki/lib/exe/opensearch.php" 
+rel="search" type="application/opensearchdescription+xml"> <LINK href="/dokuwiki/" 
+rel="start"> <LINK title="网站地图" href="/dokuwiki/wiki.php?id=sailfish_x%E5%88%B7%E6%9C%BA&amp;do=index" 
+rel="contents"> <LINK title="Recent Changes" href="/dokuwiki/feed.php" rel="alternate" 
+type="application/rss+xml"> <LINK title="Current Namespace" href="/dokuwiki/feed.php?mode=list&amp;ns=" 
+rel="alternate" type="application/rss+xml"> <LINK title="Plain HTML" href="/dokuwiki/wiki.php?do=export_xhtml&amp;id=sailfish_x%E5%88%B7%E6%9C%BA" 
+rel="alternate" type="text/html"> <LINK href="http://www.loc/dokuwiki/wiki.php?id=sailfish_x%E5%88%B7%E6%9C%BA" 
+rel="canonical"> <LINK href="index_files/css.css" rel="stylesheet" type="text/css"> 
+<SCRIPT type="text/javascript">/*<![CDATA[*/var NS='';var JSINFO = {"id":"sailfish_x\u5237\u673a","namespace":""};
+/*!]]>*/</SCRIPT>
+ 
+<SCRIPT src="index_files/js.js" type="text/javascript" charset="utf-8"></SCRIPT>
+ 
+<META name="viewport" content="width=device-width,initial-scale=1"> <LINK href="/dokuwiki/lib/tpl/vector/static/3rd/dokuwiki/favicon.ico" 
+rel="shortcut icon"> <LINK href="/dokuwiki/lib/tpl/vector/static/3rd/dokuwiki/apple-touch-icon.png" 
+rel="apple-touch-icon"> <LINK href="index_files/print.css" rel="stylesheet" 
+type="text/css" media="all"> <LINK href="index_files/print(1).css" rel="stylesheet" 
+type="text/css" media="all"> <LINK href="/dokuwiki/lib/tpl/vector/user/print.css" 
+rel="stylesheet" type="text/css" media="all"> <!--[if lt IE 7]><style type="text/css">body{behavior:url("/dokuwiki/lib/tpl/vector/static/3rd/vector/csshover.htc")}</style><![endif]--> 
+</HEAD> 
+<BODY class="skin-vector">
+<DIV id="page-container">
+<DIV class="noprint" id="page-base"></DIV>
+<DIV class="noprint" id="head-base"></DIV><!-- start div id=content --> 
+<DIV id="content"><A name="top" id="top"></A>   <A name="dokuwiki__top" id="dokuwiki__top"></A> 
+  <!-- start main content area -->     
+<DIV class="noprint" id="siteNotice">[&nbsp;<A title="wiki:site_notice" class="wikilink2" 
+href="http://www.loc/dokuwiki/wiki.php?id=wiki:site_notice" 
+rel="nofollow">请填写此占位符  (:wiki:site_notice)</A>&nbsp;]<BR></DIV><!-- start div id bodyContent --> 
+  
+<DIV class="dokuwiki" id="bodyContent"><!-- start rendered wiki content -->     
+<P><STRONG>解锁前将手机Android系统恢复出厂设置，务必将Android升级到最新系统（7.1.1，大于228版本），否则刷机失败</STRONG><BR><SPAN 
+class="wrap_em ">本刷机包为官方刷机包，非社区版，使用Android需要自己帐号已经购买jolla服务。<BR>如需代购，群（<A title="https://jq.qq.com/?_wv=1027&amp;k=52Km75b" 
+class="urlextern" href="https://jq.qq.com/?_wv=1027&amp;k=52Km75b" rel="nofollow">jolla/旗鱼/印度鱼</A>）里找我，目前统一代购价480（含50欧元官方费用，搭梯子、汇率兑换手续费和一点点小费）</SPAN> 
+</P>
+<H1 class="sectionedit1" id="准备">准备</H1>
+<DIV class="level1">
+<P>不解锁bootloader不能刷机，所以需要先解锁bootloader，解锁bootloader需要获取解锁代码。 </P></DIV>
+<H2 class="sectionedit2" id="允许手机解锁">允许手机解锁</H2>
+<DIV class="level2">
+<UL>
+  <LI class="level1">
+  <DIV class="li"><SPAN 
+  class="wrap_em ">手机进入Android，设置-关于手机-软件版本，点多次，直到提示已经进入开发者模式，回到设置—开发者选项——勾选 
+  开启oem解锁 </SPAN></DIV></LI></UL></DIV>
+<H2 class="sectionedit3" id="查看是否可以解锁_是否已经解锁">查看是否可以解锁/是否已经解锁</H2>
+<DIV class="level2">
+<UL>
+  <LI class="level1">
+  <DIV class="li"> 拨号界面输入 <STRONG>*#*#7378423#*#</STRONG>* </DIV></LI>
+  <LI class="level1">
+  <DIV class="li">依次点击菜单 Service Info——Configuration，滑到最后，查看Rooting 
+  Status</DIV></LI>
+  <LI class="level1">
+  <DIV class="li">如果为 Bootloader unlocked： Yes 则已经解锁，如果为 Bootloader unlock 
+  allowed： Yes 则为未解锁（可解锁）</DIV></LI></UL></DIV>
+<H2 class="sectionedit4" id="获取unlock_code">获取unlock code</H2>
+<DIV class="level2">
+<P>需要参考官方指导，<A title="https://developer.sonymobile.com/unlockbootloader/unlock-yourboot-loader/" 
+class="urlextern" href="https://developer.sonymobile.com/unlockbootloader/unlock-yourboot-loader/" 
+rel="nofollow">https://developer.sonymobile.com/unlockbootloader/unlock-yourboot-loader/</A> 
+</P>
+<OL>
+  <LI class="level1">
+  <DIV class="li">在<A title="https://developer.sonymobile.com/unlockbootloader/unlock-yourboot-loader/" 
+  class="urlextern" href="https://developer.sonymobile.com/unlockbootloader/unlock-yourboot-loader/" 
+  rel="nofollow"> 官方网址</A> 选择“Xperia X”后点击“Continue”</DIV></LI>
+  <LI class="level1">
+  <DIV class="li">在 email 验证界面输入你的email，勾选“Terms &amp; conditions” 和 “I'm not a 
+  robot” 后点 “submit”，然后在收到的确认邮件中点击“Click here to proceed”</DIV></LI>
+  <LI class="level1">
+  <DIV class="li">在拨号界面输入 <STRONG>*#06#</STRONG>，记下IMEI 
+  ，在上述打开的地址输入IMEI，勾选下面两个选择框，然后“submit”</DIV></LI>
+  <LI class="level1">
+  <DIV class="li">记下上面得到的 unlock code</DIV></LI></OL></DIV>
+<H1 class="sectionedit5" id="刷机或解锁环境准备">刷机或解锁环境准备</H1>
+<DIV class="level1"></DIV>
+<H2 class="sectionedit6" id="安装刷机工具">安装刷机工具</H2>
+<DIV class="level2">
+<P><STRONG>如果</STRONG>使用包含sailfish镜像的一键刷机包，则里面已经包含fastboot工具，不需要单独下载。 </P>
+<P>若想单独安装刷机工具，点击<A title="https://pan.baidu.com/s/1hsiq2Eg" class="urlextern" 
+href="https://pan.baidu.com/s/1hsiq2Eg" rel="nofollow">这里</A>下载 
+。下载后解压，解压目录最好不要含中文和空格 </P>
+<P>使用方法：进入解压后的目录，<STRONG>按住shift并右键</STRONG>，点击“在此处打开命令窗口” </P></DIV>
+<H2 class="sectionedit7" id="驱动安装">驱动安装</H2>
+<DIV class="level2">
+<P>若驱动没有正确安装，则刷机时fastboot找不到设备。 </P></DIV>
+<H3 class="sectionedit8" id="重启电脑_临时禁用强制驱动签名">重启电脑，临时禁用强制驱动签名</H3>
+<DIV class="level3">
+<P><STRONG>此操作仅当安装驱动时执行，驱动安装成功后不需要此步骤</STRONG> </P>
+<P>具体操作参考 <A title="https://zhidao.baidu.com/question/2118293227537379627.html" 
+class="urlextern" href="https://zhidao.baidu.com/question/2118293227537379627.html" 
+rel="nofollow">https://zhidao.baidu.com/question/2118293227537379627.html</A> 
+</P></DIV>
+<H3 class="sectionedit9" id="安装驱动">安装驱动</H3>
+<DIV class="level3">
+<UL>
+  <LI class="level1">
+  <DIV class="li"> 
+  手机关机，按住音量+键同时将数据线插入电脑USB接口，待手机指示灯变为蓝色，手机进入fastboot模式</DIV></LI>
+  <LI class="level1">
+  <DIV class="li"> 电脑会自动安装驱动，但会失败，忽略即可</DIV></LI>
+  <LI class="level1">
+  <DIV class="li"> 下载 <A title="https://pan.baidu.com/s/1c2nisHq" class="urlextern" 
+  href="https://pan.baidu.com/s/1c2nisHq" rel="nofollow">驱动</A> 并解压</DIV></LI>
+  <LI class="level1">
+  <DIV class="li"> 右击“计算机”图标（win7，若win10则为此电脑），选择“管理”—“设备管理”—“其它设备”—“S1Boot 
+  Fastboot”</DIV></LI>
+  <LI class="level1">
+  <DIV 
+  class="li">选择“更新驱动程序软件”—“浏览计算机以查找驱动程序软件”—“从计算机的设备驱动程序列表中选择”—“下一步”—“从磁盘安装”—“浏览”找到刚才解压的驱动程序目录，选择“android_winusb.inf”—“确定”</DIV></LI>
+  <LI class="level1">
+  <DIV class="li">点击第二个“Android bootloader 
+  interface”—“下一步”—“是”—“始终安装此驱动程序软件”</DIV></LI></UL></DIV>
+<H1 class="sectionedit10" id="解锁bootloader">解锁bootloader</H1>
+<DIV class="level1">
+<P>如果手机已经解锁忽略该操作。<BR><SPAN class="wrap_em ">解锁bootloader会重置系统为出厂状态丢失所有数据</SPAN> 
+</P></DIV>
+<H2 class="sectionedit11" id="解锁bootloader1">解锁bootloader</H2>
+<DIV class="level2">
+<P>若手机已经在fastboot模式，直接下一步，若手机不是在fastboot模式 </P>
+<UL>
+  <LI class="level1">
+  <DIV class="li"> 
+关掉手机，按住音量加键同时将数据线插入电脑USB接口，待指示灯显示为蓝色，手机进入fastboot模式</DIV></LI></UL>
+<P>若已经进入fastboot模式则， </P>
+<OL>
+  <LI class="level1">
+  <DIV class="li"> 在刷机工具目录打开cmd窗口，输入 fastboot devices 查看是否检测到设备，若显示类似BH90063H5K  
+      fastboot，则驱动正常，若没有内容则驱动安装失败，重新检查上面步骤</DIV></LI>
+  <LI class="level1">
+  <DIV class="li"> 执行 fastboot -i 0x0fce oem unlock 0xNNNNNNNNN 
+  解锁（<STRONG>将NNNNNNNNN替换为前面得到的unlock code</STRONG>）</DIV></LI></OL>
+<P>
+解锁后第一次重启会提示一句英文，大概意思是“你的设备已经解锁，设备不受信任”然后5秒后自动重启，重启后系统为<STRONG>恢复出厂设置状态</STRONG>，需要<STRONG>等待</STRONG>一会才能进入系统界面，以后每次重启也都会上述提示。 
+</P></DIV>
+<H1 class="sectionedit12" id="刷官方系统">刷官方系统</H1>
+<DIV class="level1">
+<P>按照上面步骤，确认已解锁bootloader并能用fastboot devices看到手机后 </P>
+<UL>
+  <LI class="level1">
+  <DIV class="li"> 这里下载<A title="https://pan.baidu.com/s/1KHMs6DF9oYioijOS9XWJKw" 
+  class="urlextern" href="https://pan.baidu.com/s/1KHMs6DF9oYioijOS9XWJKw" rel="nofollow">一键刷机包</A>后解压</DIV></LI>
+  <LI class="level1">
+  <DIV class="li"> 
+双击flash-on-windows.bat，回车，稍等片刻提示完成，断开数据线，重启手机</DIV></LI></UL></DIV>
+<H2 class="sectionedit13" id="授权应用">授权应用</H2>
+<DIV class="level2"></DIV>
+<H3 class="sectionedit14" id="输入法">输入法</H3>
+<DIV class="level3"></DIV>
+<H4 id="安装中文输入法">安装中文输入法</H4>
+<DIV class="level4">
+<P>开启 
+设置—不受信任的软件—允许不受信任的软件，用浏览器打开下面地址，普通下载，下载后点击安装，<STRONG>都安装完后重启手机</STRONG><BR>
+或者如果你懂得命令行安装软件，下载到手机上使用命令安装 </P>
+<UL>
+  <LI class="level1">
+  <DIV class="li"><A title="https://pan.baidu.com/s/1sl1BcJV" class="urlextern" 
+  href="https://pan.baidu.com/s/1sl1BcJV" 
+  rel="nofollow">jolla-xt9-cp-0.2.7-10.5.5.jolla.armv7hl</A></DIV></LI>
+  <LI class="level1">
+  <DIV class="li"><A title="https://pan.baidu.com/s/1qXZSMLY" class="urlextern" 
+  href="https://pan.baidu.com/s/1qXZSMLY" 
+  rel="nofollow">jolla-xt9-0.5.9-10.8.5.jolla.armv7hl</A></DIV></LI></UL></DIV>
+<H4 id="android支持">Android支持</H4>
+<DIV class="level4">
+<P>使用购买过jolla服务的帐号登陆，在商店下载 </P></DIV>
+<H1 class="sectionedit15" id="恢复出厂设置">恢复出厂设置</H1>
+<DIV class="level1">
+<P>移除sailfish，恢复Android系统<BR>下载官方恢复Android工具<A title="https://developer.sonymobile.com/downloads/tool/flash-tool-for-xperia-devices/" 
+class="urlextern" href="https://developer.sonymobile.com/downloads/tool/flash-tool-for-xperia-devices/" 
+rel="nofollow">emma</A> <BR>具体使用参考 <A title="https://developer.sonymobile.com/open-devices/flash-tool/use-the-flash-tool-for-xperia-devices/" 
+class="urlextern" href="https://developer.sonymobile.com/open-devices/flash-tool/use-the-flash-tool-for-xperia-devices/" 
+rel="nofollow">https://developer.sonymobile.com/open-devices/flash-tool/use-the-flash-tool-for-xperia-devices/</A> 
+</P>
+<UL>
+  <LI class="level1">
+  <DIV class="li">工具安装完启动时需要联网，可能需要翻，墙才能正常运行</DIV></LI>
+  <LI class="level1">
+  <DIV class="li"> 关机，按音量减键同时插入电脑USB接口，指示灯变绿，自动安装驱动后识别手机</DIV></LI>
+  <LI class="level1">
+  <DIV class="li"> 选择 大于 34.3 的服务版本，点应用服务</DIV></LI>
+  <LI class="level1">
+  <DIV class="li"> 软件会下载2.5G的东西，然后将手机恢复出厂设置</DIV></LI>
+  <LI class="level1">
+  <DIV class="li"> 断开usb，启动手机</DIV></LI></UL></DIV>
+<H2 class="sectionedit16" id="flashtool">flashtool</H2>
+<DIV class="level2">
+<UL>
+  <LI class="level1">
+  <DIV class="li"><A title="http://bbs.gfan.com/android-9033591-1-1.html" class="urlextern" 
+  href="http://bbs.gfan.com/android-9033591-1-1.html" 
+  rel="nofollow">http://bbs.gfan.com/android-9033591-1-1.html</A></DIV></LI>
+  <LI class="level1">
+  <DIV class="li"><A title="http://www.xperiablog.net/2016/03/12/install-xperia-marshmallow-using-flashtool-and-xperifirm-guide/" 
+  class="urlextern" href="http://www.xperiablog.net/2016/03/12/install-xperia-marshmallow-using-flashtool-and-xperifirm-guide/" 
+  rel="nofollow">http://www.xperiablog.net/2016/03/12/install-xperia-marshmallow-using-flashtool-and-xperifirm-guide/</A></DIV></LI>
+  <LI class="level1">
+  <DIV class="li"><A title="http://www.xperiablog.net/2017/12/05/xperia-x-and-x-compact-receive-december-2017-security-patches-34-3-a-0-252/" 
+  class="urlextern" href="http://www.xperiablog.net/2017/12/05/xperia-x-and-x-compact-receive-december-2017-security-patches-34-3-a-0-252/" 
+  rel="nofollow">http://www.xperiablog.net/2017/12/05/xperia-x-and-x-compact-receive-december-2017-security-patches-34-3-a-0-252/</A></DIV></LI></UL></DIV><!-- end rendered wiki content --> 
+    
+<DIV class="clearer"></DIV></DIV><!-- end div id bodyContent -->     
+<DIV class="catlinks noprint">
+<P><SPAN class="bchead">您的足迹:</SPAN> <SPAN class="bcsep">•</SPAN> <SPAN class="curid"><A 
+title="sailfish_x刷机" class="breadcrumbs" href="http://www.loc/dokuwiki/wiki.php?id=sailfish_x%E5%88%B7%E6%9C%BA">sailfish_x刷机</A></SPAN> 
+  </P></DIV></DIV><!-- end div id=content --> <!-- start div id=head --> 
+<DIV class="noprint" id="head">
+<DIV id="p-personal">
+<UL>
+  <LI id="pt-login"><A href="http://www.loc/dokuwiki/wiki.php?id=sailfish_x%E5%88%B7%E6%9C%BA&amp;do=login" 
+  rel="nofollow">登录</A></LI></UL></DIV><!-- start div id=left-navigation -->   
+<DIV id="left-navigation">
+<DIV class="vectorTabs" id="p-namespaces">
+<UL>
+  <LI class="selected" id="ca-nstab-main"><A href="http://www.loc/dokuwiki/wiki.php?id=sailfish_x%E5%88%B7%E6%9C%BA"><SPAN>文章</SPAN></A></LI></UL></DIV></DIV><!-- end div id=left-navigation --> 
+  <!-- start div id=right-navigation -->   
+<DIV id="right-navigation">
+<DIV class="vectorTabs" id="p-views">
+<UL>
+  <LI class="selected" id="ca-view"><A href="http://www.loc/dokuwiki/wiki.php?id=sailfish_x%E5%88%B7%E6%9C%BA"><SPAN>阅读</SPAN></A></LI>
+  <LI id="ca-history"><A title="[ALT+O]" accesskey="O" href="http://www.loc/dokuwiki/wiki.php?id=sailfish_x%E5%88%B7%E6%9C%BA&amp;do=revisions"><SPAN>修订记录</SPAN></A></LI></UL></DIV>
+<DIV id="p-search">
+<H5><LABEL for="qsearch__in">搜索</LABEL>       </H5>
+<FORM name="dw__search" id="dw__search" action="/dokuwiki/wiki.php?id=%E9%A6%96%E9%A1%B5" 
+accept-charset="utf-8"><INPUT name="do" type="hidden" value="search">         
+<DIV id="simpleSearch"><INPUT name="id" id="qsearch__in" accesskey="f" type="text"> 
+          <BUTTON name="button" title="搜索这个文本" id="searchButton" 
+type="submit">&nbsp;</BUTTON>         </DIV>
+<DIV class="ajax_qsearch JSpopup" id="qsearch__out"></DIV></FORM>     
+</DIV></DIV><!-- end div id=right-navigation --> </DIV><!-- end div id=head --> <!-- start panel/sidebar --> 
+<DIV class="noprint" id="panel"><!-- start logo -->   
+<DIV id="p-logo"><A title="[ALT+H]" accesskey="h" style='background-image: url("/dokuwiki/lib/tpl/vector/static/3rd/dokuwiki/logo.png");' 
+href="http://www.loc/dokuwiki/wiki.php?id=%E9%A6%96%E9%A1%B5"></A></DIV><!-- end logo --> 
+    
+<DIV class="portal" id="p-navigation">
+<H5>导航</H5>
+<DIV class="body">
+<DIV class="dokuwiki">
+<P>test </P></DIV></DIV></DIV>
+<DIV class="portal" id="p-toc">
+<H5>目录</H5>
+<DIV class="body">
+<DIV class="dokuwiki"><!-- TOC START --> 
+<DIV>
+<DIV>
+<UL>
+  <LI class="level1">
+  <DIV class="li"><A href="http://www.loc/dokuwiki/wiki.php?id=sailfish_x%E5%88%B7%E6%9C%BA&amp;rev=1529907481&amp;vecdo=print#准备">准备</A></DIV>
+  <UL>
+    <LI class="level2">
+    <DIV class="li"><A href="http://www.loc/dokuwiki/wiki.php?id=sailfish_x%E5%88%B7%E6%9C%BA&amp;rev=1529907481&amp;vecdo=print#允许手机解锁">允许手机解锁</A></DIV></LI>
+    <LI class="level2">
+    <DIV class="li"><A href="http://www.loc/dokuwiki/wiki.php?id=sailfish_x%E5%88%B7%E6%9C%BA&amp;rev=1529907481&amp;vecdo=print#查看是否可以解锁_是否已经解锁">查看是否可以解锁/是否已经解锁</A></DIV></LI>
+    <LI class="level2">
+    <DIV class="li"><A href="http://www.loc/dokuwiki/wiki.php?id=sailfish_x%E5%88%B7%E6%9C%BA&amp;rev=1529907481&amp;vecdo=print#获取unlock_code">获取unlock 
+    code</A></DIV></LI></UL></LI>
+  <LI class="level1">
+  <DIV class="li"><A href="http://www.loc/dokuwiki/wiki.php?id=sailfish_x%E5%88%B7%E6%9C%BA&amp;rev=1529907481&amp;vecdo=print#刷机或解锁环境准备">刷机或解锁环境准备</A></DIV>
+  <UL>
+    <LI class="level2">
+    <DIV class="li"><A href="http://www.loc/dokuwiki/wiki.php?id=sailfish_x%E5%88%B7%E6%9C%BA&amp;rev=1529907481&amp;vecdo=print#安装刷机工具">安装刷机工具</A></DIV></LI>
+    <LI class="level2">
+    <DIV class="li"><A href="http://www.loc/dokuwiki/wiki.php?id=sailfish_x%E5%88%B7%E6%9C%BA&amp;rev=1529907481&amp;vecdo=print#驱动安装">驱动安装</A></DIV>
+    <UL>
+      <LI class="level3">
+      <DIV class="li"><A href="http://www.loc/dokuwiki/wiki.php?id=sailfish_x%E5%88%B7%E6%9C%BA&amp;rev=1529907481&amp;vecdo=print#重启电脑_临时禁用强制驱动签名">重启电脑，临时禁用强制驱动签名</A></DIV></LI>
+      <LI class="level3">
+      <DIV class="li"><A href="http://www.loc/dokuwiki/wiki.php?id=sailfish_x%E5%88%B7%E6%9C%BA&amp;rev=1529907481&amp;vecdo=print#安装驱动">安装驱动</A></DIV></LI></UL></LI></UL></LI>
+  <LI class="level1">
+  <DIV class="li"><A href="http://www.loc/dokuwiki/wiki.php?id=sailfish_x%E5%88%B7%E6%9C%BA&amp;rev=1529907481&amp;vecdo=print#解锁bootloader">解锁bootloader</A></DIV>
+  <UL>
+    <LI class="level2">
+    <DIV class="li"><A href="http://www.loc/dokuwiki/wiki.php?id=sailfish_x%E5%88%B7%E6%9C%BA&amp;rev=1529907481&amp;vecdo=print#解锁bootloader1">解锁bootloader</A></DIV></LI></UL></LI>
+  <LI class="level1">
+  <DIV class="li"><A href="http://www.loc/dokuwiki/wiki.php?id=sailfish_x%E5%88%B7%E6%9C%BA&amp;rev=1529907481&amp;vecdo=print#刷官方系统">刷官方系统</A></DIV>
+  <UL>
+    <LI class="level2">
+    <DIV class="li"><A href="http://www.loc/dokuwiki/wiki.php?id=sailfish_x%E5%88%B7%E6%9C%BA&amp;rev=1529907481&amp;vecdo=print#授权应用">授权应用</A></DIV>
+    <UL>
+      <LI class="level3">
+      <DIV class="li"><A href="http://www.loc/dokuwiki/wiki.php?id=sailfish_x%E5%88%B7%E6%9C%BA&amp;rev=1529907481&amp;vecdo=print#输入法">输入法</A></DIV>
+      <UL>
+        <LI class="level4">
+        <DIV class="li"><A href="http://www.loc/dokuwiki/wiki.php?id=sailfish_x%E5%88%B7%E6%9C%BA&amp;rev=1529907481&amp;vecdo=print#安装中文输入法">安装中文输入法</A></DIV></LI>
+        <LI class="level4">
+        <DIV class="li"><A href="http://www.loc/dokuwiki/wiki.php?id=sailfish_x%E5%88%B7%E6%9C%BA&amp;rev=1529907481&amp;vecdo=print#android支持">Android支持</A></DIV></LI></UL></LI></UL></LI></UL></LI>
+  <LI class="level1">
+  <DIV class="li"><A href="http://www.loc/dokuwiki/wiki.php?id=sailfish_x%E5%88%B7%E6%9C%BA&amp;rev=1529907481&amp;vecdo=print#恢复出厂设置">恢复出厂设置</A></DIV>
+  <UL>
+    <LI class="level2">
+    <DIV class="li"><A href="http://www.loc/dokuwiki/wiki.php?id=sailfish_x%E5%88%B7%E6%9C%BA&amp;rev=1529907481&amp;vecdo=print#flashtool">flashtool</A></DIV></LI></UL></LI></UL></DIV></DIV><!-- TOC END --> 
+      </DIV></DIV></DIV>
+<DIV class="portal" id="p-coll-print_export">
+<H5>打印/导出</H5>
+<DIV class="body">
+<DIV class="dokuwiki">
+<UL>
+  <LI id="coll-download-as-odt"><A href="http://www.loc/dokuwiki/wiki.php?id=sailfish_x%E5%88%B7%E6%9C%BA&amp;do=export_odt" 
+  rel="nofollow">做为ODT下载</A></LI>
+  <LI id="coll-download-as-rl"><A href="http://www.loc/dokuwiki/wiki.php?id=sailfish_x%E5%88%B7%E6%9C%BA&amp;do=export_pdf" 
+  rel="nofollow">做为PDF下载</A></LI>
+  <LI id="t-print"><A href="http://www.loc/dokuwiki/wiki.php?id=sailfish_x%E5%88%B7%E6%9C%BA&amp;rev=1529907481&amp;vecdo=print" 
+  rel="nofollow">可打印版本</A></LI></UL></DIV></DIV></DIV>
+<DIV class="portal" id="p-tb">
+<H5>工具箱</H5>
+<DIV class="body">
+<DIV class="dokuwiki">
+<UL>
+  <LI id="t-whatlinkshere"><A href="http://www.loc/dokuwiki/wiki.php?id=sailfish_x%E5%88%B7%E6%9C%BA&amp;do=backlink">反向链接</A></LI>
+  <LI id="t-recentchanges"><A href="http://www.loc/dokuwiki/wiki.php?id=%E9%A6%96%E9%A1%B5&amp;do=recent" 
+  rel="nofollow">最近更改</A></LI>
+  <LI id="t-upload"><A href="http://www.loc/dokuwiki/wiki.php?id=%E9%A6%96%E9%A1%B5&amp;do=media" 
+  rel="nofollow">媒体管理器</A></LI>
+  <LI id="t-special"><A href="http://www.loc/dokuwiki/wiki.php?id=%E9%A6%96%E9%A1%B5&amp;do=index" 
+  rel="nofollow">站点索引</A></LI>
+  <LI id="t-permanent"><A href="http://www.loc/dokuwiki/wiki.php?id=sailfish_x%E5%88%B7%E6%9C%BA&amp;rev=1529907481" 
+  rel="nofollow">永久链接</A></LI>
+  <LI id="t-cite"><A href="http://www.loc/dokuwiki/wiki.php?id=sailfish_x%E5%88%B7%E6%9C%BA&amp;rev=1529907481&amp;vecdo=cite" 
+  rel="nofollow">引用此文</A></LI></UL></DIV></DIV></DIV></DIV><!-- end panel/sidebar --> 
+</DIV><!-- end page-container --> <!-- start footer --> 
+<DIV class="noprint" id="footer">
+<UL id="footer-info">
+  <LI id="footer-info-lastmod">sailfish_x刷机.txt · 最后更改: 2018/06/25 06:18 
+  (外部编辑)<BR></LI>
+  <LI id="footer-info-copyright">
+  <DIV class="dokuwiki">
+  <DIV class="license">除额外注明的地方外，本维基上的内容按下列许可协议发布： <A class="urlextern" href="http://creativecommons.org/licenses/by-sa/3.0/" 
+  rel="license">CC Attribution-Share Alike 3.0 Unported</A></DIV></DIV></LI></UL>
+<UL id="footer-places">
+  <LI><A title="最近更改" href="http://www.loc/dokuwiki/feed.php" target="_blank" 
+  rel="nofollow"><IMG width="80" height="15" title="最近更改" alt="最近更改" src="index_files/button-rss.png" 
+  border="0"></A>       <A title="用于Dokuwiki的vector主题" href="http://syn-systems.com/" 
+  target="_blank"><IMG width="80" height="15" title="用于Dokuwiki的vector主题" alt="用于Dokuwiki的vector主题" 
+  src="index_files/button-vector.png" border="0"></A>       <A title="DokuWiki" 
+  href="http://www.dokuwiki.org/" target="_blank"><IMG width="80" height="15" 
+  title="DokuWiki" alt="DokuWiki" src="index_files/button-dw.png" 
+  border="0"></A>       <A title="Valid XHTML" href="http://validator.w3.org/check/referer" 
+  target="_blank" rel="nofollow"><IMG width="80" height="15" title="Valid XHTML" 
+  alt="Valid XHTML" src="index_files/button-xhtml.png" border="0"></A>     
+</LI></UL>
+<DIV></DIV></DIV><!-- end footer --> <IMG width="2" height="1" alt="" src="index_files/indexer.gif"> 
+</BODY></HTML>
