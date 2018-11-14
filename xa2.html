@@ -37,20 +37,15 @@ rel="stylesheet" type="text/css" media="all"> <!--[if lt IE 7]><style type="text
 <DIV id="content"><A name="top" id="top"></A>   <A name="dokuwiki__top" id="dokuwiki__top"></A> 
   <!-- start main content area -->     
 <DIV class="dokuwiki" id="bodyContent"><!-- start rendered wiki content --> 
- <SPAN class="wrap_em ">本教程适用于X单卡和双卡版，XA2刷机教程见
-    <A title="xa2" 
-    class="urlextern" href="xa2.html" 
-    rel="nofollow"></A>
+ <SPAN class="wrap_em ">本教程适用于XA2系列
  </SPAN>
-<P><STRONG>解锁前将手机Android系统恢复出厂设置，务必将Android升级到最新系统（34.3.A.0.xxx 其中 xxx 大于228 或 34.4.A.yyy 其中 yyy 任意）
-  <BR>
-    如果手机已经解锁，请参考教程最后，使用官方恢复工具升级Android版本
-</STRONG><BR><SPAN 
+<P><STRONG>解锁前最好确保Android版本为8.1
+  </STRONG><BR><SPAN 
 class="wrap_em ">使用Android需要自己帐号已经购买jolla服务。本刷机包可能版本较低，可刷机后通过在线方式升级</SPAN> 
 </P>
 <H1 class="sectionedit1" id="准备">准备</H1>
 <DIV class="level1">
-<P>操作前请确保Android版本已经升级到合适版本。不解锁bootloader不能刷机，所以需要先解锁bootloader，解锁bootloader需要获取解锁码（unlock code）。 </P></DIV>
+<P>不解锁bootloader不能刷机，所以需要先解锁bootloader，解锁bootloader需要获取解锁码（unlock code）。 </P></DIV>
 <H2 class="sectionedit3" id="查看是否可以解锁_是否已经解锁">查看是否可以解锁/是否已经解锁</H2>
 <DIV class="level2">
 <UL>
@@ -88,7 +83,7 @@ class="wrap_em ">使用Android需要自己帐号已经购买jolla服务。本刷
   <LI class="level1">
   <DIV class="li">在<A title="https://developer.sonymobile.com/unlockbootloader/unlock-yourboot-loader/" 
   class="urlextern" href="https://developer.sonymobile.com/unlockbootloader/unlock-yourboot-loader/" 
-  rel="nofollow"> 官方网址</A> 拉到最下面，选择“Xperia X”，然后再下拉网页</DIV></LI>
+  rel="nofollow"> 官方网址</A> 拉到最下面，选择相应版本，如"Xperia XA2"，"Xperia XA2 Plus"，然后再下拉网页</DIV></LI>
   <LI class="level1">
   <DIV class="li">在 “Enter IMEI, IDID or MEID” 输入框输入你的IMEI，勾选第一项和第二项，点击Submit，输入验证码，点击Continue</DIV></LI>
   <LI class="level1">
@@ -100,17 +95,16 @@ class="wrap_em ">使用Android需要自己帐号已经购买jolla服务。本刷
 <H2 class="sectionedit6" id="安装刷机工具">下载刷机包（安装刷机工具）</H2>
 <DIV class="level2">
 <P>
-    这里下载</br>
-    <A title="https://pan.baidu.com/s/1-1_UWKq7j48SAKh0Sl_wOA" 
-    class="urlextern" href="https://pan.baidu.com/s/1-1_UWKq7j48SAKh0Sl_wOA" rel="nofollow">刷机包（单卡f5121）</A>
-  </br>
-  <A title="https://pan.baidu.com/s/1TxFU-vY8spYzaB5ZP31g7Q" 
-  class="urlextern" href="https://pan.baidu.com/s/1TxFU-vY8spYzaB5ZP31g7Q" rel="nofollow">刷机包（双卡f5122）</A>
+    参考这里下载对应版本</br>
+    <A title="http://tieba.baidu.com/p/5949384234" 
+    class="urlextern" href="http://tieba.baidu.com/p/5949384234" rel="nofollow">XA2系列刷机包</A>
 </br>
     后解压，压缩包较大，耐心等待解压完成，里面已经包含fastboot刷机工具 </P>
 </DIV>
 <H2 class="sectionedit7" id="驱动安装">驱动安装</H2>
-
+<DIV class="level2">
+    <P>如果电脑能够自动安装驱动，可跳过此步骤，否则需要手动安装驱动</P>
+</DIV>
 <H3 class="sectionedit8" id="临时禁用强制驱动签名">临时禁用强制驱动签名</H3>
 <DIV class="level3">
 <P>具体操作参考 <A title="https://zhidao.baidu.com/question/395785383882144125.html?qbl=relate_question_0" 
@@ -123,15 +117,14 @@ rel="nofollow"></A>
 <UL>
   <LI class="level1">
   <DIV class="li"> 
-  手机关机，按住音量加键同时将数据线插入电脑USB接口，待手机指示灯变为蓝色，手机进入fastboot模式</DIV></LI>
+  手机关机，按住音量加键同时将数据线插入电脑USB接口，待手机指示灯变为蓝色（如果灯变绿，重新关机，断开数据线，重试），手机进入fastboot模式</DIV></LI>
   <LI class="level1">
   <DIV class="li"> 电脑会自动安装驱动，但会失败，忽略即可</DIV></LI>
   <LI class="level1">
   <DIV class="li"> 下载 <A title="https://pan.baidu.com/s/1OF-v3MQ4yOC_eVh6ftR6Dw" class="urlextern" 
   href="https://pan.baidu.com/s/1OF-v3MQ4yOC_eVh6ftR6Dw" rel="nofollow">驱动</A> 并解压</DIV></LI>
   <LI class="level1">
-  <DIV class="li"> 右击“计算机”图标（win7，若win10则为此电脑），选择“管理”—“设备管理”—“其它设备”—“S1Boot 
-  Fastboot”</DIV></LI>
+  <DIV class="li"> 右击“计算机”图标（win7，若win10则为此电脑），选择“管理”—“设备管理”—“其它设备”—“Android”</DIV></LI>
   <LI class="level1">
   <DIV 
   class="li">选择“更新驱动程序软件”—“浏览计算机以查找驱动程序软件”—“从计算机的设备驱动程序列表中选择”—“下一步”—“从磁盘安装”—“浏览”找到刚才解压的驱动程序目录，选择“sa0114adb.inf”—“确定”</DIV></LI>
@@ -205,7 +198,7 @@ rel="nofollow"></A>
   <LI class="level1">
   <DIV class="li"> 关机，按音量减键同时插入电脑USB接口，指示灯变绿，自动安装驱动后识别手机</DIV></LI>
   <LI class="level1">
-  <DIV class="li"> 选择 大于 34.3 的服务版本，点应用服务</DIV></LI>
+  <DIV class="li"> 选择最新的服务版本，点应用服务</DIV></LI>
   <LI class="level1">
   <DIV class="li"> 软件会下载2.5G的东西，然后将手机恢复出厂设置</DIV></LI>
   <LI class="level1">
